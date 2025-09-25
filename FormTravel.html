@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reserva</h1>
+    <form action="https://formspree.io/f/xwprpqvd" method="POST">
+        
+        <div id="Travel">
+            <div>
+                <h3>Travel</h3>
+                <strong>Travel: </strong> <select name="Travel-Route" id="">
+                    <option value="go">go</option>
+                    <option value="go-and-back">go and back</option>
+                </select>
+                <strong>From</strong> <select name="From" id="">
+                            <option value="Argentinian">Argentinian</option>
+                            <option value="Peruvian">Peruvian</option>
+                            <option value="Brazilian">Brazilian</option>
+                            <option value="USA">USA</option>
+                </select>
+    
+                <strong>To</strong> <select name="To" id="">
+                            <option value="Argentinian">Argentinian</option>
+                            <option value="Peruvian">Peruvian</option>
+                            <option value="Brazilian">Brazilian</option>
+                            <option value="USA">USA</option>
+                </select>
+
+            </div>
+
+            <div>
+                <strong>DateTime</strong> <input type="date" name="datetravel" id="">
+                <strong>Hours</strong> <input type="time" name="timetravel" id="">
+            </div>
+
+            <div>
+                <fieldset aria-required="true">
+                    <strong>Aireline</strong>
+
+                    <p>Sky</p> </label>
+                    <label> <input name="Aireline" type="checkbox" value="Sky"> 
+                        <p>LATAM</p> </label>
+                        <label> <input name="Aireline" type="checkbox" value="LATAM"> 
+                            <p>Aerolíneas-Argentinas</p> </label>
+                            <label> <input name="Aireline" type="checkbox" value="Aerolíneas-Argentinas"> 
+                                <p>Flybondi</p> </label>
+                                <label> <input name="Aireline" type="checkbox" value="Flybondi"> 
+                </fieldset>
+            </div>
+        </div>
+
+        <fieldset>
+            <div  id="Document">
+                <h3>Document</h3>
+                <div>
+                    <strong>Names: </strong> <input type="text" name="" id="">
+                    <strong>LastName: </strong> <input type="text">
+    
+                    <div>
+                        <strong>Nacionality</strong>
+                        <select name="Nacionality" id="">
+                            <option value="Argentinian">Argentinian</option>
+                            <option value="Peruvian">Peruvian</option>
+                            <option value="Brazilian">Brazilian</option>
+                            <option value="USA">USA</option>
+                        </select>
+    
+                        <strong>Type</strong>
+                        <select name="Document" id="">
+                            <option value="DNI">DNI</option>
+                            <option value="Passport">Passport</option>
+                        </select>
+        
+                        <strong>Number Document</strong>
+                        <input type="number" name="Number-Document" id="">
+        
+                        <strong>Birthdate</strong>
+                        <input type="date" name="Birthdate" id="">
+                    </div>
+    
+                    <div>
+                        <strong>Sex</strong>
+                        <select name="Sex" id="">
+                            <option value="Female">Female</option>
+                            <option value="Masculine">Masculine</option>
+                            <option name="no-Binary" id="">No Binary</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
