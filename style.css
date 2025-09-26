@@ -1,6 +1,15 @@
 .boton{
     width: 100px;
     height: 100px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.boton:hover{
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 0px 100px rgba(17, 113, 151, 0.685);
 }
 
 .Titulo{
@@ -17,13 +26,18 @@
     color: chartreuse;
 }
 
+#Bform{
+    background-color: rgb(13, 136, 158);
+    color: rgb(102, 245, 255);
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: image-set("https://aventurateaviajar.com/library/mod_noticias/images/aventurate-a-viajar.JPG");
 }
 
 fieldset{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(17, 113, 151, 0.685);
     color: rgb(245, 236, 236);
     background-size: cover;
 }
@@ -45,9 +59,9 @@ fieldset{
 #pantalla{
     border-radius: 20px;
     display: flex;
-    width: 100%;
+    width: 660px;
     height: 300px;
-    background-color: rgb(57, 3, 3);
+    background-color: rgb(3, 35, 57);
         div{
             background-position: 0px 0px;
             background-size: 100% 400px;
@@ -55,8 +69,12 @@ fieldset{
         }
 }
 
+.Conjunto{
+    display: flex;
+}
+
 .p1{
-    background-image: image-set("https://th.bing.com/th/id/R.c542f9621247ae3385a99bfba4eb3e53?rik=BYEjycCUJPoR0g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-wj7brAwloX4%2fU7gPjb8F5XI%2fAAAAAAAAOOc%2fSCIu_W0895g%2fs1600%2fclosed-for-holidays-summer-beach-cerrado-por-vacaciones-verano-playa.gif&ehk=SVkdClDWqPJWIH48DJ8rpYqs8u8V7eQ2x%2fQF8AXOUQM%3d&risl=&pid=ImgRaw&r=0");
+    background-image: image-set("https://es.gizmodo.com/app/uploads/2025/05/Diseno-sin-titulo-49-10.jpg");
     animation: 12s p1a infinite;
     background-size: 900px;
     background-position: 0px -55px;
@@ -73,9 +91,8 @@ fieldset{
     background-size: 900px;
 }
 .p4{
-    background-image: image-set("https://scx1.b-cdn.net/csz/news/800/2019/howchildreni.jpg");
+    background-image: image-set("https://humanidades.com/wp-content/uploads/2017/04/brasil-1-e1566159470787.jpg");
     animation: 12s p4a infinite;
-    background-position: -290px -290px;
 }
 
 
