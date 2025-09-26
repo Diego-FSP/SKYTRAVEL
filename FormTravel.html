@@ -3,52 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>FormTravel</title>
 </head>
 <body>
-    <h1>Reserva</h1>
+    <div class="Encabezado">
+        <h1 class="Titulo">Reserva</h1>
+    </div>
     <form action="https://formspree.io/f/xwprpqvd" method="POST">
         
-        <div id="Travel">
-            <div>
-                <h3>Travel</h3>
-                <strong>Travel: </strong> <select name="Travel-Route" id="">
-                    <option value="go">go</option>
-                    <option value="go-and-back">go and back</option>
-                </select>
-                <strong>From</strong> <select name="From" id="">
-                            <option value="Argentinian">Argentinian</option>
-                            <option value="Peruvian">Peruvian</option>
-                            <option value="Brazilian">Brazilian</option>
-                            <option value="USA">USA</option>
-                </select>
-    
-                <strong>To</strong> <select name="To" id="">
-                            <option value="Argentinian">Argentinian</option>
-                            <option value="Peruvian">Peruvian</option>
-                            <option value="Brazilian">Brazilian</option>
-                            <option value="USA">USA</option>
-                </select>
+        <fieldset>
+                <div id="Travel">
+                    <div>
+                        <h3>World</h3>
+                        <strong>Travel: </strong> <select name="Travel-Route" id="">
+                            <option value="go">go</option>
+                            <option value="go-and-back">go and back</option>
+                        </select>
+                        <strong>From</strong> <select name="From" id="">
+                                    <option value="Argentinian">Argentinian</option>
+                                    <option value="Peruvian">Peruvian</option>
+                                    <option value="Brazilian">Brazilian</option>
+                                    <option value="USA">USA</option>
+                        </select>
+            
+                        <strong>To</strong> <select name="To" id="">
+                                    <option value="Argentinian">Argentinian</option>
+                                    <option value="Peruvian">Peruvian</option>
+                                    <option value="Brazilian">Brazilian</option>
+                                    <option value="USA">USA</option>
+                        </select>
+        
+                    </div>
+        
+                    <div>
+                        <strong>DateTime</strong> <input type="date" name="datetravel" id="">
+                        <strong>Hours</strong> <input type="time" name="timetravel" id="">
+                    </div>
 
-            </div>
-
-            <div>
-                <strong>DateTime</strong> <input type="date" name="datetravel" id="">
-                <strong>Hours</strong> <input type="time" name="timetravel" id="">
-            </div>
+            </fieldset>
 
             <div>
                 <fieldset aria-required="true">
                     <strong>Aireline</strong>
-
-                    <p>Sky</p> </label>
-                    <label> <input name="Aireline" type="checkbox" value="Sky"> 
-                        <p>LATAM</p> </label>
-                        <label> <input name="Aireline" type="checkbox" value="LATAM"> 
-                            <p>Aerolíneas-Argentinas</p> </label>
-                            <label> <input name="Aireline" type="checkbox" value="Aerolíneas-Argentinas"> 
-                                <p>Flybondi</p> </label>
-                                <label> <input name="Aireline" type="checkbox" value="Flybondi"> 
+                    <div id="Aireline">
+                        <label> <input name="Aireline" type="radio" value="Sky"> 
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.FVXWu7y5E18RIPbl8pTRewHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""> </label>
+                        <label> <input name="Aireline" type="radio" value="LATAM"> 
+                        <img src="https://1.bp.blogspot.com/-dVjlhySV_Zk/XaMNjqVgbnI/AAAAAAAAJek/pvxqzcR29OIWg6EyiIfqvG7O7NMrgGbGACNcBGAsYHQ/s1600/LATAM%2BAirlines%2B%255Bwww.blogovector.com%255D.png" alt=""></label>
+                        <label> <input name="Aireline" type="radio" value="Aerolíneas-Argentinas"> 
+                        <img src="https://vectorseek.com/wp-content/uploads/2022/03/Aerolineas-Argentinas-Logo-Vector.jpg" alt=""> </label>
+                        <label> <input name="Aireline" type="radio" value="Flybondi"> 
+                        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/70a5ff191671343.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png" alt=""> </label>
+                    </div>
+                    
                 </fieldset>
             </div>
         </div>
@@ -57,8 +65,9 @@
             <div  id="Document">
                 <h3>Document</h3>
                 <div>
-                    <strong>Names: </strong> <input type="text" name="" id="">
-                    <strong>LastName: </strong> <input type="text">
+                    <strong>Names: </strong> <input type="text" name="Names" id="">
+                    <strong>LastName: </strong> <input type="text" name="LastName">
+                    <strong>Email: </strong> <input type="text" name="Email">
     
                     <div>
                         <strong>Nacionality</strong>
@@ -93,7 +102,7 @@
                 </div>
             </div>
         </fieldset>
-        <button type="submit">Enviar</button>
+        <a href="Index.html"><button type="submit">Enviar</button></a>
     </form>
 </body>
 </html>
